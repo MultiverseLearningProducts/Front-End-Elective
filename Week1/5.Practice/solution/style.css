@@ -1,0 +1,69 @@
+body {
+  height: 100%;
+  background-color: #333;
+
+  --hamburger-color: #fff;
+  --hamburger-height: 30px;
+  --hamburger-width: 40px;
+  --hamburger-layer-height: 6px;
+}
+
+nav {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  position: absolute;
+  width: var(--hamburger-width);
+  height: var(--hamburger-height);
+  z-index: 2;
+}
+
+.hamburger-inner {
+  width: var(--hamburger-width);
+  height: var(--hamburger-layer-height);
+  margin-top: calc(var(--hamburger-layer-height) * 2);
+  background: var(--hamburger-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger-inner::before {
+  position: absolute;
+  content: "";
+  width: var(--hamburger-width);
+  height: var(--hamburger-layer-height);
+  background: var(--hamburger-color);
+  z-index: -1;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger-inner::after {
+  position: absolute;
+  content: "";
+  width: var(--hamburger-width);
+  height: var(--hamburger-layer-height);
+  background: var(--hamburger-color);
+  z-index: -1;
+  top: calc(var(--hamburger-layer-height) * 4);
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger--open .hamburger-inner {
+  background: none;
+}
+
+.hamburger--open .hamburger-inner::before {
+  top: calc(var(--hamburger-layer-height) * 2);
+  transform: rotate(-45deg);
+}
+
+.hamburger--open .hamburger-inner::after {
+  top: calc(var(--hamburger-layer-height) * 2);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,35 @@
+.container {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+
+  /* 👇 add your styles here 👇 */
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-name: blink;
+  /* ^ add your styles here ^ */
+  
+  /*
+    shorthand:
+    animation: 2.5s infinite normal blink;
+  */
+}
+
+@keyframes blink {
+  0%, 100% { /* defines the properties at these frames */
+    /* 👇 add your styles here 👇 */
+    background: #333;
+    color: white;
+  }
+
+  50% { /* defines the properties at these frames */
+    /* 👇 add your styles here 👇 */
+    background: #ccc;
+    color: black;
+    border-radius: 48px;
+  }
+}
