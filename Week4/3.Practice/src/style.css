@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Myriad Pro", Helvetica, Arial, sans-serif; 
+  background-color: #7d5fd0;
+  color: #fff;
+  text-align: center;
+}
+
+h1{
+  font-size: 30px;
+}
+
+p{
+  margin: 0;
+}
+
+header {
+  width:100%;
+  padding: 15px;
+  background-color: #a98ff2;
+  color: #4e2fa5;
+  font-size: 30px;
+}
+
+.count-box {
+  width: 320px;
+  border-radius: 10px;
+  background-color: #4e2fa5;
+  margin: 10px auto 0 auto;
+  padding: 20px;
+}
+
+.count-box button {
+  width: 150px;
+  height: 56px;
+  margin: 4px 2px;
+  padding: 20px 36px;
+}
