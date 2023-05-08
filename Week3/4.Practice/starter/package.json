@@ -1,0 +1,8 @@
+{
+    "type": "module",
+    "jest": {
+        "transform": {
+            "^.+\\.(js|jsx)$": "babel-jest"
+        }
+    }
+}
