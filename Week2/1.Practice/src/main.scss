@@ -1,0 +1,43 @@
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: 75%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px;
+}
+
+/* === variables === */
+$black: #333;
+$white: #fff;
+$pink: pink;
+
+.big {
+  font-size: 100px;
+  font-weight: 800;
+  color: $white;
+  background-color: $black;
+  width: fit-content;
+  padding: 8px 24px;
+  transform: skewX(-10deg);
+
+  &-pink {
+    color: $pink;
+  }
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 4px 16px;
+  background-color: transparent;
+  color: black;
+  transition: transform 0.3s ease;
+  
+/* Add your code here ⬇️ */
+  
+}
+

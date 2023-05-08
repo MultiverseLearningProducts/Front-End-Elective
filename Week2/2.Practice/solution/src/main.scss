@@ -1,0 +1,37 @@
+/* === variables === */
+
+$transition: transform 0.2s ease;
+
+/* 👇 other variables here 👇 */
+
+$info-color: orange;
+$alert-color: red;
+
+
+/*  === classes === */
+@import 'base'; // this line imports the file src/_base.scss
+
+.btn {
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: 3rem;
+  color: grey;
+  border-color: grey;
+  transition: $transition;
+
+  /* 👇 nested styles here 👇 */
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  &-info {
+    color: $info-color;
+    border-color: $info-color;
+  }
+
+  &-alert {
+    color: $alert-color;
+    border-color: $alert-color;
+  }
+}

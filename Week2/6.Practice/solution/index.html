@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tailwind Login</title>
+    </head>
+    
+    <body class="min-h-screen flex flex-col justify-center bg-gray-100">
+        <!-- 2. center login form and text within login form -->
+        <div class="mx-auto text-center">
+            <!-- 3. Size up text for heading -->
+            <span class="text-2xl font-light">Login to your account</span>
+            <!-- 4. Add floating card background with rounded corners -->
+            <div class="mt-4 bg-white shadow-md rounded-lg text-left">
+                <!-- 11. add blue accent line on top of card -->
+                <div class="h-2 bg-blue-400 rounded-t-md"></div>
+                <!-- 5. Add padding to the card background -->
+                <div class="px-8 py-6">
+                    <div>
+                    <label> Username or Email </label>
+                    <!-- 6. style the inputs -->
+                    <input type="text" placeholder="Email"class="border w-full h-5 px-3 py-5 mt-2 rounded-md focus:outline-none focus:ring-1 ">
+                    <!-- 7. give password label some space -->
+                    <label class="block mt-3"> Password </label>
+                    <!-- 6. style the inputs -->
+                    <input type="password" placeholder="Password" class="border w-full h-5 px-3 py-5 mt-2 rounded-md focus:outline-none focus:ring-1 ">
+                    <!-- 8. space out login button and forgot password link (baseline is so that the link doesn't align to the top in the next steps) -->
+                    <div class="flex justify-between items-baseline">
+                        <!-- 9. style login button -->
+                        <button type="submit" class="mt-4 bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 ">Login</button>
+                        <!-- 10. style forgot password link -->
+                        <a href="#" class="text-sm hover:underline">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- 1. load in tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</html>

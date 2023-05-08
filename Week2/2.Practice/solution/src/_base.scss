@@ -1,0 +1,20 @@
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: 75%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > * {
+  margin: 1rem;
+  padding: 1rem;
+
+}

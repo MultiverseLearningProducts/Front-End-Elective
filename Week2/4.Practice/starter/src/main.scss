@@ -1,0 +1,38 @@
+/* === imports === */
+@use 'sass:color';
+@import 'base'; // this line imports the file src/_base.scss
+
+/* === mixin === */
+
+/* 👇 write mixin here 👇 */
+
+
+
+
+
+/* === function === */
+
+/* 👇 write function here 👇 */
+
+
+
+
+/*  === classes === */
+
+/* 👇 classes here 👇 */
+
+.grey {
+  width: 200px;
+  height: 200px;
+  background: lightgray;
+}
+.green {
+  width: 200px;
+  height: 200px;
+  background: seagreen;
+}
+.blue {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}

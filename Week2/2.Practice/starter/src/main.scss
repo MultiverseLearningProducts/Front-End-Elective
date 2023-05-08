@@ -1,0 +1,23 @@
+/* === variables === */
+
+$transition: transform 0.2s ease;
+
+/* 👇 other variables here 👇 */
+
+
+
+/*  === classes === */
+@import 'base'; // this line imports the file src/_base.scss
+
+.btn {
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: 3rem;
+  color: grey;
+  border-color: grey;
+
+  /* 👇 nested styles here 👇 */
+
+
+
+}

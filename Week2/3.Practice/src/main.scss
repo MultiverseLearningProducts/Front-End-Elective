@@ -1,0 +1,36 @@
+/* === variables === */
+
+$black: #333;
+$white: #fff;
+$pink: pink;
+$transition: transform 0.3s ease;
+$scale: scale(1.1);
+$font-weights: (
+ light: 300,
+ regular: 400,
+ bold: 700,
+);
+
+/* === mixins === */
+
+// add mixin here
+
+/* === functions === */
+
+// add function here
+
+/*  === classes === */
+@import 'base'; // this line imports the file src/_base.scss
+
+.info {
+
+}
+
+.alert {
+
+}
+
+.success {
+
+}
+
